@@ -2,7 +2,7 @@
 
 Hello! Thanks for your attention on our work.
 
-## Dependency
+#### Dependency
 Successfully tested in Ubuntu 18.04
 - Python == 3.7
 - PyTorch == 1.6.0
@@ -10,7 +10,7 @@ Successfully tested in Ubuntu 18.04
 - datasets == 1.17.0
 - numpy == 1.18.5
 
-## Code Structure
+#### Code Structure
 - `brsumm`: It contains source code for bug report summarization.
 - `bugpred`: It contains source code for bug priority and severity prediction.
 - `dupbrdet`: It contains source code for duplicate bug report detection.
