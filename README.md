@@ -1,5 +1,6 @@
-### Hi there 👋
+### BureBERT: Learning to Represent Bug Reports
 
+Hello! Thanks for your attention on our work.
 <!--
 **BureBERT/BureBERT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
