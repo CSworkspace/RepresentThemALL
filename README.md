@@ -13,10 +13,13 @@ Successfully tested in Ubuntu 18.04
 - datasets == 1.17.0
 - numpy == 1.18.5
 
-#### Code Structure
+#### Project Structure
 - `brsumm`: It contains source code for bug report summarization.
 - `bugpred`: It contains source code for bug priority and severity prediction.
 - `dupbrdet`: It contains source code for duplicate bug report detection.
+
+#### Dataset
+All data we used in our experiments you can find at [dataset](https://drive.google.com/drive/folders/1gPnZbgOO4XiBBsyF27jS--XwhHaInxlQ?usp=sharing).
 
 <!--
 **BureBERT/BureBERT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
