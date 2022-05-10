@@ -1,6 +1,9 @@
 ### BureBERT: Learning to Represent Bug Reports
 
-Hello! Thanks for your attention on our work.
+Hello! Thanks for your attention on our work. BureBERT is a langauge model pretrained on BR corpus and can be fine-tuned on different BR related tasks, e.g., bug priority and severity prediction, bug report summarization, and duoplicate bug report detection.
+
+- 🔭 I’m currently working on fine-tuning BureBERT on bug localization. Some developers think that it is helpful for bug fixing.
+- 🌱 I’m currently learning the requirements of developers who are interviewed by me.
 
 #### Dependency
 Successfully tested in Ubuntu 18.04
