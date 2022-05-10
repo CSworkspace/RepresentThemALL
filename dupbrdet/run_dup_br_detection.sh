@@ -12,4 +12,4 @@ CUDA_LAUNCH_BLOCKING=1 python run_dup_br_detection.py \
   --learning_rate 5e-6 \
   --num_train_epochs 10 \
   --save_steps 10000 \
-  --output_dir ./openoffice_results_test
+  --output_dir ./openoffice_results
