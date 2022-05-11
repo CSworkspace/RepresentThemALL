@@ -1,24 +1,24 @@
 1) Are BRs helpful in software maintenance?
 
-R: 缺陷报告毫无疑问能够帮助我们进行软件维护。我们团队都会定期收集新提交的缺陷报告并且根据它们来修复软件缺陷。缺陷报告能够帮助我们快速了解到    各方的需求，改善软件的质量，提高用户的体验，最终使得我们的产品在市场上更有竞争力。
-R: Bug reports can undoubtedly help us perform software maintenance. Our team regularly collects newly submitted bug    reports and fixes software bugs based on them. Bug reports can help us quickly understand the needs of all            parties, improve the quality of the software, improve the user experience, and ultimately make our products more      competitive in the market.
+R: 缺陷报告毫无疑问能够帮助我们进行软件维护。我们团队都会定期收集新提交的缺陷报告并且根据它们来修复软件缺陷。缺陷报告能够帮助我们快速了解到各方的需求，改善软件的质量，提高用户的体验，最终使得我们的产品在市场上更有竞争力。
+R: Bug reports can undoubtedly help us perform software maintenance. Our team regularly collects newly submitted bug reports and fixes software bugs based on them. Bug reports can help us quickly understand the needs of all parties, improve the quality of the software, improve the user experience, and ultimately make our products more competitive in the market.
 
 2) Can automated BR related software tasks (e.g., bug priority prediction) improve the efficiency of software maintenance?
 
-R: 那是肯定的。通过AI技术构建一系列针对缺陷报告的自动化技术可以提高软件维护效率。现在大部分公司的开发者都要通过理解缺陷报告来进行相应的软件    维护。而这些自动化工具可以在一些环节上辅助开发，降低他们的时间开销和沟通成本，这无疑提高了软件维护效率。
-R: I am very sure of that. Building a series of automation tasks for bug reports through AI technology can improve      the efficiency of software maintenance. Most of the company's developers now need to understand the bug report to    perform corresponding software maintenance. These automated tools can assist developers in some aspects, such as      automated bug priority prediction, reducing their time overhead and communication costs, which undoubtedly            improves the efficiency of software maintenance.
+R: 那是肯定的。通过AI技术构建一系列针对缺陷报告的自动化技术可以提高软件维护效率。现在大部分公司的开发者都要通过理解缺陷报告来进行相应的软件维护。而这些自动化工具可以在一些环节上辅助开发，降低他们的时间开销和沟通成本，这无疑提高了软件维护效率。
+R: I am very sure of that. Building a series of automation tasks for bug reports through AI technology can improve the efficiency of software maintenance. Most of the company's developers now need to understand the bug report to perform corresponding software maintenance. These automated tools can assist developers in some aspects, such as automated bug priority prediction, reducing their time overhead and communication costs, which undoubtedly improves the efficiency of software maintenance.
 
 3) If BureBERT based system can simultaneously implement the four BR related tasks including priority & severity predictions, BR summarization, and duplicate BR detection, do you think it is more meaningful than the previous tool aimed at a single task?
 
-R: 从软件维护的生命周期进行考虑的话，它无疑是比针对单个任务的工具是有效的。针对单个任务的工具只能起到辅助的作用，例如优先级预测仅仅能帮助开    发者自动给bug分配优先级标签，但是他们还是需要去人工阅读缺陷报告进行其他决策。而这样一个综合的系统似乎能够作为一个开发者参与到软件维护中    来，它所作的决策貌似能够让开发者直接着手开始进行bug修复，这可以减少软件维护周期中所需要的人力和时间。
-R: Considering the life circle of software maintenance, it is undoubtedly more effective than a tool for a single        task. Tools for a single task can only be assistants, for example, priority prediction can only help developers      automatically assign priority tags to bugs, but they still need to manually read bug reports to make other            decisions. Such a comprehensive system seems to be able to participate in software maintenance as a developer, and    decisions made by it seem to allow developers to directly start to fix bugs, which can reduce the labor and time      costs in the software maintenance cycle.
+R: 从软件维护的生命周期进行考虑的话，它无疑是比针对单个任务的工具是有效的。针对单个任务的工具只能起到辅助的作用，例如优先级预测仅仅能帮助开发者自动给bug分配优先级标签，但是他们还是需要去人工阅读缺陷报告进行其他决策。而这样一个综合的系统似乎能够作为一个开发者参与到软件维护中来，它所作的决策貌似能够让开发者直接着手开始进行bug修复，这可以减少软件维护周期中所需要的人力和时间。
+R: Considering the life circle of software maintenance, it is undoubtedly more effective than a tool for a single task. Tools for a single task can only be assistants, for example, priority prediction can only help developers automatically assign priority tags to bugs, but they still need to manually read bug reports to make other decisions. Such a comprehensive system seems to be able to participate in software maintenance as a developer, and decisions made by it seem to allow developers to directly start to fix bugs, which can reduce the labor and time costs in the software maintenance cycle.
 
 4) What are your requirements for such a system?
 
-R: 从公司的角度来看，我们肯定希望该系统做出的决策能够尽可能的准确，因为这样才能确保后续的软件维护过程能够良好的进行。此外，时效性也是一个值    得考虑的因素，因为如果一周前产生的缺陷报告该系统一周后才能做出一些决策，我觉得这还不如bug triagers高效。
-R: From the perspective of the company, we definitely want the decisions made by the system to be as accurate as        possible, so as to ensure that the subsequent software maintenance process can be conducted well. In addition,        timeliness is also a factor that needs to be considered, because if the system needs a long time (e.g., one week)    to make decisions for bug reports, I think it is not as efficient as bug triagers.
+R: 从公司的角度来看，我们肯定希望该系统做出的决策能够尽可能的准确，因为这样才能确保后续的软件维护过程能够良好的进行。此外，时效性也是一个值得考虑的因素，因为如果一周前产生的缺陷报告该系统一周后才能做出一些决策，我觉得这还不如bug triagers高效。
+R: From the perspective of the company, we definitely want the decisions made by the system to be as accurate as possible, so as to ensure that the subsequent software maintenance process can be conducted well. In addition, timeliness is also a factor that needs to be considered, because if the system needs a long time (e.g., one week) to make decisions for bug reports, I think it is not as efficient as bug triagers.
 
 5) Do you have more expectations for this system?
 
 R: 如果该系统能够针对提交的缺陷进行开发者推荐，那它就有潜力去替代bug triager的前期工作，这无疑能够更好地帮助公司减少软件维护的成本。
-R: If the system supports making developer recommendations for submitted bugs, it has the potential to replace the      preliminary work of bug triagers, which will help companies reduce software maintenance costs.
+R: If the system supports making developer recommendations for submitted bugs, it has the potential to replace the preliminary work of bug triagers, which will help companies reduce software maintenance costs.
