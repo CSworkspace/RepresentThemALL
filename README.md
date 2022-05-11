@@ -17,7 +17,7 @@ Successfully tested in Ubuntu 18.04
 - `brsumm`: It contains source code for bug report summarization.
 - `bugpred`: It contains source code for bug priority and severity prediction.
 - `dupbrdet`: It contains source code for duplicate bug report detection.
-
+- `interviews`: It stores the interview record of three experienced developers about the prospect of BureBERT.
 #### Dataset
 All data we used in our experiments you can find at [dataset](https://drive.google.com/drive/folders/1gPnZbgOO4XiBBsyF27jS--XwhHaInxlQ?usp=sharing).
 
