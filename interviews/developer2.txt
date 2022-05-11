@@ -1,0 +1,15 @@
+1) Are BRs helpful in software maintenance?
+
+
+2) Can automated BR related software tasks (e.g., bug priority prediction) improve the efficiency of software maintenance?
+
+
+3) If BureBERT based system can simultaneously implement the four BR related tasks including priority & severity predictions, BR summarization, and duplicate BR detection, do you think it is more meaningful than the previous tool aimed at a single task?
+
+
+4) What are your requirements for such a system?
+
+
+5) Do you have more expectations for this system?
+
+ 
