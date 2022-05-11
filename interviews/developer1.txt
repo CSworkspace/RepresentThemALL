@@ -1,26 +1,26 @@
 1) Are BRs helpful in software maintenance?
 
 R: 缺陷报告能够帮助我们进行有效的软件维护，进行软件的快速迭代，提高软件的质量。
-R: Bug reports can help us perform effective software maintenance, achieve rapid software iteration, and improve        software quality.
+R: Bug reports can help us perform effective software maintenance, achieve rapid software iteration, and improve software quality.
 
 2) Can automated BR related software tasks (e.g., bug priority prediction) improve the efficiency of software maintenance?
 
-R: 它们都是有意义的。首先，这些自动化任务可以降低人工成本，这一点非常重要。在实际的软件工程开发中，人力资源是至关重要的。用的人越少，用的      钱就越少，这是非常有好处的。此外，使用自动化工具来辅助软件维护可以更正式和客观地解决软件维护问题。
-R: They are all meaningful. First of all, these automation tasks can reduce labor costs, which is very important. In    actual software engineering development, human resources are vital. The fewer people are used, the less money is      used, which is very beneficial for software development. Additionally, using automated tools to assist software      maintenance can be more formalized and objective in solving software maintenance problems.
+R: 它们都是有意义的。首先，这些自动化任务可以降低人工成本，这一点非常重要。在实际的软件工程开发中，人力资源是至关重要的。用的人越少，用的钱就越少，这是非常有好处的。此外，使用自动化工具来辅助软件维护可以更正式和客观地解决软件维护问题。
+R: They are all meaningful. First of all, these automation tasks can reduce labor costs, which is very important. In actual software engineering development, human resources are vital. The fewer people are used, the less money is used, which is very beneficial for software development. Additionally, using automated tools to assist software maintenance can be more formalized and objective in solving software maintenance problems.
 
 3) If BureBERT based system can simultaneously implement the four BR related tasks including priority & severity predictions, BR summarization, and duplicate BR detection, do you think it is more meaningful than the previous tool aimed at a single task?
 
-R: 这样一个系统非常有意义，因为它能够缩短软件维护的流程。这样一来，修复缺陷的周期会变得更短，因此软件更新的速度可以变得更快，用户的需求能够    得到更快的满足。
-R: Such a system makes a lot of sense because it can shorten the circle of software maintenance. In this way, the        cycle of bug fixing becomes shorter, so our software can be updated faster and we can meet user needs faster.
+R: 这样一个系统非常有意义，因为它能够缩短软件维护的流程。这样一来，修复缺陷的周期会变得更短，因此软件更新的速度可以变得更快，用户的需求能够得到更快的满足。
+R: Such a system makes a lot of sense because it can shorten the circle of software maintenance. In this way, the cycle of bug fixing becomes shorter, so our software can be updated faster and we can meet user needs faster.
 
 
 4) What are your requirements for such a system?
 
-R: 我们希从望这个系统得到的结果能够有比较好的准确性。举个例子，它对缺陷报告的重复性做出了错误的判别这无疑会增加我们后续的人力成本。此外，我    们也希望这个系统的时效性能好一些。例如今天所有的缺陷报告该系统明天就能给出相应结果的话，这无疑能够极大地提高我们的软件维护效率。
-R: We hope that the results obtained from this system can have high accuracy. For example, if it makes a wrong          judgment on the repeatability of a new bug report, our follow-up labor costs will increase. In addition, we also      hope that this system has good timeliness. For example, if it can produce the results for all bug reports            submitted today, this will undoubtedly greatly improve the efficiency of our software maintenance.
+R: 我们希从望这个系统得到的结果能够有比较好的准确性。举个例子，它对缺陷报告的重复性做出了错误的判别这无疑会增加我们后续的人力成本。此外，我们也希望这个系统的时效性能好一些。例如今天所有的缺陷报告该系统明天就能给出相应结果的话，这无疑能够极大地提高我们的软件维护效率。
+R: We hope that the results obtained from this system can have high accuracy. For example, if it makes a wrong judgment on the repeatability of a new bug report, our follow-up labor costs will increase. In addition, we also hope that this system has good timeliness. For example, if it can produce the results for all bug reports submitted today, this will undoubtedly greatly improve the efficiency of our software maintenance.
 
 5) Do you have more expectations for this system?
 
 R: 这样一个系统已经很先进了。如果说还有甚么期待的话，我认为这个系统能够为需要修复的缺陷提供一些可参考的修复事例那是极好的。
-R: Such a system is already very advanced. If there is anything to look forward to, I think it's great that this        system can provide some professional fixing examples for reference when developers start to fix the bug.
+R: Such a system is already very advanced. If there is anything to look forward to, I think it's great that this system can provide some professional fixing examples for reference when developers start to fix the bug.
  
