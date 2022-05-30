@@ -2,8 +2,8 @@
 
 Hello! Thanks for your attention on our work. BureBERT is a langauge model pretrained on BR corpus and can be fine-tuned on different BR related tasks, e.g., bug priority and severity prediction, bug report summarization, and duoplicate bug report detection.
 
-- 🔭 I’m currently working on fine-tuning BureBERT on bug localization. Some developers think that it is helpful for bug fixing.
-- 🌱 I’m currently learning the requirements of developers who are interviewed by me, and I will try to achieve these requirements in the future.
+- 🔭 We are currently working on fine-tuning BureBERT on bug localization. Some developers think that it is helpful for bug fixing.
+- 🌱 We are currently learning the requirements of developers who are interviewed by me, and I will try to achieve these requirements in the future.
 
 #### Dependency
 Successfully tested in Ubuntu 18.04
@@ -77,6 +77,10 @@ The detailed outputs are as follows:
 {'score': 0.09877894818782806, 'token': 19, 'token_str': ' with', 'sequence': '[6 Regression] Copying char arrays with constexpr evaluation does not work reliably'}
 {'score': 0.04735679551959038, 'token': 7, 'token_str': ' to', 'sequence': '[6 Regression] Copying char arrays to constexpr evaluation does not work reliably'}
 ```
+
+#### Downstream Tasks
+
+For downstream tasks, please refer to the [brsumm](https://github.com/BureBERT/BureBERT/edit/main/brsumm), [bugpred](https://github.com/BureBERT/BureBERT/edit/main/bugpred), and [dupbrdet](https://github.com/BureBERT/BureBERT/edit/main/dupbrdet) folders.
 
 <!--**BureBERT/BureBERT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
