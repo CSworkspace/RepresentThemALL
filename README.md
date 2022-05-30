@@ -21,9 +21,6 @@ Successfully tested in Ubuntu 18.04
 #### Dataset
 All data we used in our experiments you can find at [dataset](https://drive.google.com/drive/folders/1gPnZbgOO4XiBBsyF27jS--XwhHaInxlQ?usp=sharing).
 
-<!--
-**BureBERT/BureBERT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
 #### Quick Tour
 We use huggingface/transformers framework to train the model. You can use our model like the pre-trained Roberta base. Now, We give an example on how to load the model and obtian embedding from BureBERT.
 
@@ -49,6 +46,8 @@ tensor([[[-0.0376,  0.1328, -0.0124,  ..., -0.1959,  0.0159,  0.0594],
          [-0.0500,  0.1313, -0.0308,  ..., -0.2453,  0.0029,  0.0397]]],
        grad_fn=<NativeLayerNormBackward>)
 
+<!--
+**BureBERT/BureBERT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
