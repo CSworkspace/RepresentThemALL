@@ -47,6 +47,36 @@ tensor([[[-0.0376,  0.1328, -0.0124,  ..., -0.1959,  0.0159,  0.0594],
        grad_fn=<NativeLayerNormBackward>)
  ```
 
+#### Probing
+
+We give an example on using BureBERT for mask prediction task (pre-training).
+
+```python
+from transformers import RobertaConfig, RobertaTokenizer, RobertaForMaskedLM, pipeline
+
+model = RobertaForMaskedLM.from_pretrained("Colorful/BureBERT")
+tokenizer = RobertaTokenizer.from_pretrained("Colorful/BureBERT")
+
+BR = "[6 Regression] Copying char arrays <mask> constexpr evaluation does not work reliably"
+fill_mask = pipeline('fill-mask', model=model, tokenizer=tokenizer)
+
+outputs = fill_mask(BR)
+print(outputs)
+```
+
+Results
+```python
+'during', 'in', 'for', 'with', 'to'
+```
+
+The detailed outputs are as follows:
+```python
+{'score': 0.26558613777160645, 'token': 148, 'token_str': ' during', 'sequence': '[6 Regression] Copying char arrays during constexpr evaluation does not work reliably'}
+{'score': 0.1885920614004135, 'token': 11, 'token_str': ' in', 'sequence': '[6 Regression] Copying char arrays in constexpr evaluation does not work reliably'}
+{'score': 0.11839114874601364, 'token': 13, 'token_str': ' for', 'sequence': '[6 Regression] Copying char arrays for constexpr evaluation does not work reliably'}
+{'score': 0.09877894818782806, 'token': 19, 'token_str': ' with', 'sequence': '[6 Regression] Copying char arrays with constexpr evaluation does not work reliably'}
+{'score': 0.04735679551959038, 'token': 7, 'token_str': ' to', 'sequence': '[6 Regression] Copying char arrays to constexpr evaluation does not work reliably'}
+```
 
 <!--**BureBERT/BureBERT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
