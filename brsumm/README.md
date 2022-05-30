@@ -9,3 +9,6 @@ Note that you should replace the input of the following three parameters with th
 - --train_file
 - --validation_file
 - --test_file
+
+Different from bug priority & severity prediction or duplicate bug report detection, the architecture used for bug report summarization is based on Seq2Seq framework, which is shown in the following figure.
+![figure](https://github.com/BureBERT/BureBERT/tree/main/brsumm/ftburebert_seq2seq.pdf)
