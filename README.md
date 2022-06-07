@@ -67,6 +67,7 @@ print(outputs)
 Results
 ```python
 'during', 'in', 'for', 'with', 'to'
+Gold: 'during'
 ```
 
 The detailed outputs are as follows:
