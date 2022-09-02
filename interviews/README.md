@@ -1,1 +1,0 @@
-In this directory, we put the interview records of three experienced developers about the prospect of BureBERT.
