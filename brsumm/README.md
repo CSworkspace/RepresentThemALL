@@ -1,6 +1,6 @@
 ### Bug report summarization
 
-We provide the source code for fine-tuning BureBERT on bug report summarization task. We combine BureBERT with Seq2Seq framework and use it to generate summary for the given bug report. To help you quickly run our code, you can just use the following command:
+We provide the source code for fine-tuning RTA on bug report summarization task. We combine RTA with Seq2Seq framework and use it to generate summary for the given bug report. To help you quickly run our code, you can just use the following command:
 ```bash
 bash run_summarization.sh
 ```
@@ -12,5 +12,5 @@ Note that you should replace the input of the following three parameters with th
 
 Different from bug priority & severity prediction or duplicate bug report detection, the architecture used for bug report summarization is based on Seq2Seq framework, which is shown in the following figure.
 <p align="center">
-  <img src="https://github.com/BureBERT/BureBERT/blob/main/picture/ftburebert_seq2seq.png" />
+  <img src="https://github.com/ICSE-2023/RepresentThemAll/blob/main/picture/ftburebert_seq2seq.png" />
 </p>
