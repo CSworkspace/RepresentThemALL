@@ -1,8 +1,8 @@
-### BureBERT: Learning to Represent Bug Reports
+### RTA(RepresentThemAll): Learning to Represent Bug Reports
 
-Hello! Thanks for your attention on our work. Bug report is the specific report that contains the information about what is wrong and where developers should fix the given bug, which can help perform software maintenance. As for BureBERT, it is a langauge model pretrained on the bug report corpus and can be fine-tuned on different bug report related tasks, e.g., bug priority and severity prediction, bug report summarization, and duoplicate bug report detection, all of which can improve the efficiency of software maintenance.
+Hello! Thanks for your attention on our work. Bug report is the specific report that contains the information about what is wrong and where developers should fix the given bug, which can help perform software maintenance. As for RTA, it is a langauge model pretrained on the bug report corpus and can be fine-tuned on different bug report related tasks, e.g., bug priority and severity prediction, bug report summarization, and duoplicate bug report detection, all of which can improve the efficiency of software maintenance.
 
-- 🔭 We are currently working on fine-tuning BureBERT on bug localization. Some developers think that it is helpful for bug fixing.
+- 🔭 We are currently working on fine-tuning RTA on bug localization. Some developers think that it is helpful for bug fixing.
 - 🌱 We are currently learning the requirements of developers who are interviewed by me, and I will try to achieve these requirements in the future.
 
 #### Dependency
@@ -17,18 +17,18 @@ Successfully tested in Ubuntu 18.04
 - `brsumm`: It contains source code for bug report summarization.
 - `bugpred`: It contains source code and some experimental results for bug priority and severity prediction.
 - `dupbrdet`: It contains source code and some experimental results for duplicate bug report detection.
-- `interviews`: It stores the interview record of three experienced developers about the prospect of BureBERT.
+- `interviews`: It stores the interview record of three experienced developers about the prospect of RTA.
 #### Dataset
 All data we used in our experiments you can find at [dataset](https://drive.google.com/drive/folders/1gPnZbgOO4XiBBsyF27jS--XwhHaInxlQ?usp=sharing).
 
 #### Quick Tour
-We use huggingface/transformers framework to train the model. You can use our model like the pre-trained Roberta base. Now, We give an example on how to load the model and obtian embedding from BureBERT.
+We use huggingface/transformers framework to train the model. You can use our model like the pre-trained Roberta base. Now, We give an example on how to load the model and obtian embedding from RTA.
 
 ```python
 >>> from transformers import AutoTokenizer, AutoModel
 >>> import torch
->>> tokenizer = AutoTokenizer.from_pretrained("Colorful/BureBERT")
->>> model = AutoModel.from_pretrained("Colorful/BureBERT")
+>>> tokenizer = AutoTokenizer.from_pretrained("Colorful/RTA")
+>>> model = AutoModel.from_pretrained("Colorful/RTA")
 >>> br = "\"Select in Projects\" should select classes from jars 1) Open \"Go to Type\" dialog 2) Select java.lang.Object class 3) Open the context menu of the editor where the source file of the Object class is shown after the Go To Type dialog has been closed. Notice that the editor is in read-only mode. 4) In the context menu select \"Select in Projects\" menu item. Notice that you can achieve the same by using Navigate main menu when the editor is active.  Actual result: Project panel is opened, the panel keeps the previous selection. Which is wrong.  Expected result: Project panel is opened, the panel expands the project tree so that   <project_name>/Libraries/<JDK>/rt.jar/java/lang/Object.class  gets selected and revealed."
 >>> br_tokens = tokenizer.tokenize(br)
 ['"', 'Select', 'Ġin', 'ĠProjects', '"', 'Ġshould', 'Ġselect', 'Ġclasses', 'Ġfrom', 'Ġjars', 'Ġ1', ')', 'ĠOpen', 'Ġ"', 'Go', 'Ġto', 'ĠType', '"', 'Ġdialog', 'Ġ2', ')', 'ĠSelect', 'Ġjava', '.', 'lang', '.', 'Object', 'Ġclass', 'Ġ3', ')', 'ĠOpen', 'Ġthe', 'Ġcontext', 'Ġmenu', 'Ġof', 'Ġthe', 'Ġeditor', 'Ġwhere', 'Ġthe', 'Ġsource', 'Ġfile', 'Ġof', 'Ġthe', 'ĠObject', 'Ġclass', 'Ġis', 'Ġshown', 'Ġafter', 'Ġthe', 'ĠGo', 'ĠTo', 'ĠType', 'Ġdialog', 'Ġhas', 'Ġbeen', 'Ġclosed', '.', 'ĠNotice', 'Ġthat', 'Ġthe', 'Ġeditor', 'Ġis', 'Ġin', 'Ġread', '-', 'only', 'Ġmode', '.', 'Ġ4', ')', 'ĠIn', 'Ġthe', 'Ġcontext', 'Ġmenu', 'Ġselect', 'Ġ"', 'Select', 'Ġin', 'ĠProjects', '"', 'Ġmenu', 'Ġitem', '.', 'ĠNotice', 'Ġthat', 'Ġyou', 'Ġcan', 'Ġachieve', 'Ġthe', 'Ġsame', 'Ġby', 'Ġusing', 'ĠNav', 'igate', 'Ġmain', 'Ġmenu', 'Ġwhen', 'Ġthe', 'Ġeditor', 'Ġis', 'Ġactive', '.', 'Ġ', 'ĠActual', 'Ġresult', ':', 'ĠProject', 'Ġpanel', 'Ġis', 'Ġopened', ',', 'Ġthe', 'Ġpanel', 'Ġkeeps', 'Ġthe', 'Ġprevious', 'Ġselection', '.', 'ĠWhich', 'Ġis', 'Ġwrong', '.', 'Ġ', 'ĠEx', 'pected', 'Ġresult', ':', 'ĠProject', 'Ġpanel', 'Ġis', 'Ġopened', ',', 'Ġthe', 'Ġpanel', 'Ġexpands', 'Ġthe', 'Ġproject', 'Ġtree', 'Ġso', 'Ġthat', 'Ġ', 'Ġ', 'Ġ<', 'project', '_', 'name', '>', '/', 'L', 'ibraries', '/', '<', 'JD', 'K', '>', '/', 'rt', '.', 'jar', '/', 'java', '/', 'lang', '/', 'Object', '.', 'class', 'Ġ', 'Ġgets', 'Ġselected', 'Ġand', 'Ġrevealed', '.']
@@ -49,13 +49,13 @@ tensor([[[-0.0376,  0.1328, -0.0124,  ..., -0.1959,  0.0159,  0.0594],
 
 #### Probing
 
-We give an example on using BureBERT for mask prediction task (pre-training).
+We give an example on using RTA for mask prediction task (pre-training).
 
 ```python
 from transformers import RobertaConfig, RobertaTokenizer, RobertaForMaskedLM, pipeline
 
-model = RobertaForMaskedLM.from_pretrained("Colorful/BureBERT")
-tokenizer = RobertaTokenizer.from_pretrained("Colorful/BureBERT")
+model = RobertaForMaskedLM.from_pretrained("Colorful/RTA")
+tokenizer = RobertaTokenizer.from_pretrained("Colorful/RTA")
 
 BR = "[6 Regression] Copying char arrays <mask> constexpr evaluation does not work reliably"
 fill_mask = pipeline('fill-mask', model=model, tokenizer=tokenizer)
@@ -81,9 +81,9 @@ The detailed outputs are as follows:
 
 #### Downstream Tasks
 
-For downstream tasks, please refer to the [brsumm](https://github.com/BureBERT/BureBERT/edit/main/brsumm), [bugpred](https://github.com/BureBERT/BureBERT/edit/main/bugpred), and [dupbrdet](https://github.com/BureBERT/BureBERT/edit/main/dupbrdet) folders.
+For downstream tasks, please refer to the [brsumm](https://github.com/ICSE-2023/RepresentThemALL/edit/main/brsumm), [bugpred](https://github.com/ICSE-2023/RepresentThemALL/edit/main/bugpred), and [dupbrdet](https://github.com/ICSE-2023/RepresentThemALL/edit/main/dupbrdet) folders.
 
-<!--**BureBERT/BureBERT** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+<!--**ICSE-2023/RepresentThemALL** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
 Here are some ideas to get you started:
 
