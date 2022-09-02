@@ -1,5 +1,5 @@
 CUDA_LAUNCH_BLOCKING=1 python run_summarization.py \
-  --model_name_or_path Colorful/BureBERT \
+  --model_name_or_path Colorful/RTA \
   --train_file ./dataset/sum_train_clean.csv \
   --validation_file ./dataset/sum_valid_clean.csv \
   --test_file ./dataset/sum_test_clean.csv \
