@@ -1,5 +1,5 @@
 CUDA_LAUNCH_BLOCKING=1 python run_dup_br_detection.py \
-  --model_name_or_path Colorful/BureBERT \
+  --model_name_or_path Colorful/RTA \
   --train_file ./open_office/train.csv \
   --validation_file ./open_office/valid.csv \
   --test_file ./open_office/test.csv \
