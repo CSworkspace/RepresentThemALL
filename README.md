@@ -19,7 +19,7 @@ Successfully tested in Ubuntu 18.04
 - `dupbrdet`: It contains source code and some experimental results for duplicate bug report detection.
 - `interviews`: It stores the interview record of three experienced developers about the prospect of RTA.
 #### Dataset
-All data we used in our experiments you can find at [dataset](https://drive.google.com/drive/folders/1gPnZbgOO4XiBBsyF27jS--XwhHaInxlQ?usp=sharing).
+All data we used in our experiments you can find at [dataset](https://drive.google.com/drive/folders/1gPnZbgOO4XiBBsyF27jS--XwhHaInxlQ?usp=sharing). You can download pre-trained RTA at [RTA](https://huggingface.co/Colorful/RTA).
 
 #### Quick Tour
 We use huggingface/transformers framework to train the model. You can use our model like the pre-trained Roberta base. Now, We give an example on how to load the model and obtian embedding from RTA.
