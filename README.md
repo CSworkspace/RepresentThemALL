@@ -3,7 +3,9 @@
 Hello! Thanks for your attention on our work. Bug report is the specific report that contains the information about what is wrong and where developers should fix the given bug, which can help perform software maintenance. As for RTA, it is a langauge model pretrained on the bug report corpus and can be fine-tuned on different bug report related tasks, e.g., bug priority and severity prediction, bug report summarization, and duoplicate bug report detection, all of which can improve the efficiency of software maintenance.
 
 - 🔭 We are currently working on fine-tuning RTA on bug localization. Some developers think that it is helpful for bug fixing.
+<!--
 - 🌱 We are currently learning the requirements of developers who are interviewed by me, and I will try to achieve these requirements in the future.
+-->
 
 #### Dependency
 Successfully tested in Ubuntu 18.04
