@@ -21,3 +21,9 @@ PS: For precision, recall, and F1-score, we calculated the weighted average of p
 |seBERT|97.25|98.24|97.97|98.10|
 |RTA|97.88|98.54|98.54|98.54|
 
+### bug report summarization
+| Model|ROUGE-1|ROUGE-2|ROUGE-L|c.BLEU|
+|:----:|:----:|:----:|:----:|:----:|
+|seBERT|29.47|16.05|27.42|4.19|
+|RTA|39.19|20.57|35.97|10.13|
+
