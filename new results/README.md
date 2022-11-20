@@ -18,6 +18,7 @@ PS: For precision, recall, and F1-score, we calculated the weighted average of p
 ### Duplicate bug report detection
 | Model|Accuracy|Precision|Recall|F1-Score|
 |:----:|:----:|:----:|:----:|:----:|
+|S-BERT|97.41|98.25|98.19|98.21|
 |seBERT|97.25|98.24|97.97|98.10|
 |RTA|97.88|98.54|98.54|98.54|
 
