@@ -1,4 +1,4 @@
-We add the results of comparison RTA and seBERT, the latter is also pre-trained on SE data, i.e., GitHub/Jira issues.
+We add the results of comparison RTA and seBERT, the latter is also pre-trained on SE data, i.e., GitHub/Jira issues. Additionally, we also fine-tune RTA on bug localization.
 
 
 ### Bug priority prediction (%)
@@ -28,3 +28,12 @@ PS: For precision, recall, and F1-score, we calculated the weighted average of p
 |seBERT|29.47|16.05|27.42|4.19|
 |RTA|39.19|20.57|35.97|10.13|
 
+### bug localization
+| Model|Acc@1|Acc@5|Acc@10|MAP|MRR|
+|:----:|:----:|:----:|:----:|:----:|:----:|
+|DreamLoc|0.40|0.72|0.81|0.48|0.54|
+|FLIM|0.50|0.73|0.81|0.53|0.60|
+|BugLocator|0.20|0.48|0.57|0.22|0.32|
+|YBL|0.36|0.53|0.64|0.37|0.44|
+|AdaptiveBL|0.41|0.65|0.68|0.43|0.51|
+|RTA|0.56|0.77|0.84|0.56|0.63|
