@@ -1,4 +1,4 @@
-### RTA(RepresentThemAll): Learning to Represent Bug Reports
+### RTA(RepresentThemAll): Learning the Universal Representation of Bug Reports
 
 Hello! Thanks for your attention on our work. Bug report is the specific report that contains the information about what is wrong and where developers should fix the given bug, which can help perform software maintenance. As for RTA, it is a langauge model pretrained on the bug report corpus and can be fine-tuned on different bug report related tasks, e.g., bug priority and severity prediction, bug report summarization, and duoplicate bug report detection, all of which can improve the efficiency of software maintenance.
 
