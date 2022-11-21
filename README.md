@@ -3,9 +3,8 @@
 Hello! Thanks for your attention on our work. Bug report is the specific report that contains the information about what is wrong and where developers should fix the given bug, which can help perform software maintenance. As for RTA, it is a langauge model pretrained on the bug report corpus and can be fine-tuned on different bug report related tasks, e.g., bug priority and severity prediction, bug report summarization, and duoplicate bug report detection, all of which can improve the efficiency of software maintenance.
 
 - 🔭 We are currently working on fine-tuning RTA on bug localization. Some developers think that it is helpful for bug fixing.
-<!--
-- 🌱 We are currently learning the requirements of developers who are interviewed by me, and I will try to achieve these requirements in the future.
--->
+- 🌱 We are planing to apply RTA to more downstream tasks, like error estimation and bug fixer recommendation.
+- 🌱 We are planing to collect a larger bug report corpus for RTA's pre-training.
 
 #### Dependency
 Successfully tested in Ubuntu 18.04
@@ -20,6 +19,7 @@ Successfully tested in Ubuntu 18.04
 - `bugpred`: It contains source code and some experimental results for bug priority and severity prediction.
 - `dupbrdet`: It contains source code and some experimental results for duplicate bug report detection.
 - `new results`: It contains some new experimental results like fine-tuning RTA on bug localization and the comparison between RTA and seBERT.
+- `baseline.zip`: It contains no-official implementations for some baselines.
 #### Dataset
 All data we used in our experiments you can find at [dataset](https://drive.google.com/drive/folders/1gPnZbgOO4XiBBsyF27jS--XwhHaInxlQ?usp=sharing). You can download pre-trained RTA at [RTA](https://huggingface.co/Colorful/RTA).
 
