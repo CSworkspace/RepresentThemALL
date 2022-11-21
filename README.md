@@ -7,7 +7,7 @@ Hello! Thanks for your attention on our work. Bug report is the specific report 
 - 🌱 We are planing to collect a larger bug report corpus for RTA's pre-training.
 
 #### Dependency
-Successfully tested in Ubuntu 18.04
+Successfully tested in CentOS 7 with four RTX 3090 GPUs.
 - Python == 3.7
 - PyTorch == 1.6.0
 - transformers == 4.17.0
