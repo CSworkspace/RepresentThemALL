@@ -7,12 +7,12 @@ Hello! Thanks for your attention on our work. Bug report is the specific report 
 - 🌱 We are planing to collect a larger bug report corpus for RTA's pre-training.
 
 #### Dependency
-Successfully tested in CentOS 7 with four RTX 3090 GPUs.
+Successfully tested in CentOS 7 with 4 RTX 3090 GPUs.
 - Python == 3.7
-- PyTorch == 1.6.0
-- transformers == 4.17.0
-- datasets == 1.17.0
-- numpy == 1.18.5
+- PyTorch == 1.13.0
+- transformers == 4.24.0
+- datasets == 2.6.1
+- numpy == 1.21.6
 
 #### Project Structure
 - `brsumm`: It contains source code for bug report summarization.
